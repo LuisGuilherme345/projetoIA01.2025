@@ -1,0 +1,23 @@
+[project]
+name = "projeto-ia"
+version = "0.1.0"
+description = ""
+authors = [
+    {name = "LuisGuilherme345",email = "luis.pmelo@sempreceub.com"}
+]
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = [
+    "pandas (>=2.3.0,<3.0.0)",
+    "scikit-learn (>=1.7.0,<2.0.0)",
+    "streamlit (>=1.46.1,<2.0.0)",
+    "matplotlib (>=3.10.3,<4.0.0)"
+]
+
+[tool.poetry]
+packages = [{include = "projeto_ia", from = "src"}]
+
+
+[build-system]
+requires = ["poetry-core>=2.0.0,<3.0.0"]
+build-backend = "poetry.core.masonry.api"
